@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #ecf0f1;
+  font-family: 'Arial', sans-serif;
+  font-size: 0.8rem; 
+  color: #333;
+}
+
+.container {
+  width: 80vw;
+  max-width: 800px;
+}
+
+.calculator {
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.input-sliders,
+.output-details {
+  margin-bottom: 2rem;
+}
+
+.input-field,
+.output-field {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+}
+
+.output-field h2 {
+  font-size: 1.6rem;
+  color: #2c3e50;
+}
+
+.output-field p {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.interest-rate {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #e74c3c;
+}
+
+#purchase-price-display,
+#equity-display,
+#repayment-time-display,
+#loan-amount span,
+#estimated-monthly span,
+.interest-rate span {
+  font-weight: bold;
+}
+
+#loan-amount,
+#estimated-monthly {
+  letter-spacing: 0.1rem;
+}
+
+#get-quote {
+  padding: 1rem 2rem; 
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  font-size: 1.4rem;
+  font-family: 'Arial', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  color: #fff;
+}
+
+#loan-amount,
+#estimated-monthly {
+  letter-spacing: 0.1rem;
+}
+
+#get-quote:hover {
+  background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95vw;
+  }
+}

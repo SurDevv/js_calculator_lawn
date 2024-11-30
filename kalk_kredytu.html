@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Kalkulator Kredytu Hipotecznego</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Kalkulator Kredytu Hipotecznego</h1>
+            <div class="input-sliders">
+                <div class="input-field">
+                    <label for="purchase-price">
+                        Cena zakupu: 
+                        <span id="purchase-price-display">670000</span>
+                        <strong>PLN</strong>
+                    </label>
+                    <input
+                        type="range"
+                        id="purchase-price"
+                        min="100000"
+                        max="1000000"
+                        value="670000"
+                        step="10000"
+                    />
+                </div>
+                <div class="input-field">
+                    <label for="equity">
+                        Wkład własny: 
+                        <span id="equity-display">440000</span> 
+                        <strong>PLN</strong> 
+                    </label>
+                    <input
+                        type="range"
+                        id="equity"
+                        min="0"
+                        max="500000"
+                        value="140000"
+                        step="5000"
+                    />
+                </div>
+                <div class="input-field">
+                    <label for="repayment-time">Czas spłaty: <span id="repayment-time-display">12</span><strong> lat</strong></label>
+                    <input
+                        type="range"
+                        id="repayment-time"
+                        min="5"
+                        max="30"
+                        value="25"
+                    />
+                </div>
+            </div>
+            <div class="output-details">
+                <div class="output-field">
+                    <h2>Kwota kredytu</h2>
+                    <p id="loan-amount"><span>230000</span> PLN</p>
+                </div>
+                <div class="output-field">
+                    <h2>Szacunkowa rata miesięczna</h2>
+                    <p id="estimated-monthly">PLN <span>1885</span></p>
+                    <span class="interest-rate">Oprocentowanie: <span>4</span>%</span>
+                </div>
+            </div>
+            <button id="get-quote">Otrzymaj wycenę kredytu</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
